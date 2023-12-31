@@ -1,6 +1,6 @@
 package net.ace.moredetectors.item;
 
-import net.ace.moredetectors.item.custom.*;
+import net.ace.moredetectors.item.customitems.*;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;

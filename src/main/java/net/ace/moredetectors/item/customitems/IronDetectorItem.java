@@ -1,4 +1,4 @@
-package net.ace.moredetectors.item.custom;
+package net.ace.moredetectors.item.customitems;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -10,11 +10,12 @@ import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.math.BlockPos;
 
-public class DiamondDetectorItem extends Item{
-
-    public DiamondDetectorItem(Settings settings) {
+public class IronDetectorItem extends Item {
+    public IronDetectorItem(Settings settings) {
         super(settings);
     }
+
+    @Override
     public ActionResult useOnBlock(ItemUsageContext context) {
         if(!context.getWorld().isClient()) {
             BlockPos positionClicked = context.getBlockPos();
@@ -45,10 +46,10 @@ public class DiamondDetectorItem extends Item{
 
     private void outputValuableCoordinates(BlockPos blockPos, PlayerEntity player, Block block) {
         player.sendMessage(Text.literal( "在 " +
-                "[" + "x: "+blockPos.getX() + ", "+"y: "+ blockPos.getY() + ", "+"z: " + blockPos.getZ() + "]"+" 找到: " + "(" + block.asItem().getName().getString() + ")"), false);
+                "[" + "x: "+blockPos.getX() + ", "+"y: "+ blockPos.getY() + ", "+"z: " + blockPos.getZ() + "]"+" 找到: " + "("+block.asItem().getName().getString()+")"), false);
     }
 
     private boolean isValuableBlock(BlockState state) {
-        return state.isOf(Blocks.DIAMOND_ORE) || state.isOf(Blocks.DEEPSLATE_DIAMOND_ORE);
+        return state.isOf(Blocks.IRON_ORE) || state.isOf(Blocks.DEEPSLATE_IRON_ORE) || state.isOf(Blocks.COAL_ORE);
     }
 }

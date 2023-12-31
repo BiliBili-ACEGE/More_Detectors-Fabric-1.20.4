@@ -1,4 +1,4 @@
-package net.ace.moredetectors.item.custom;
+package net.ace.moredetectors.item.customitems;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -10,8 +10,8 @@ import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.math.BlockPos;
 
-public class Emerald_DetectorItem extends Item {
-    public Emerald_DetectorItem(Settings settings) {
+public class Netherite_DetectorItem extends Item {
+    public Netherite_DetectorItem(Settings settings) {
         super(settings);
     }
     public ActionResult useOnBlock(ItemUsageContext context) {
@@ -44,10 +44,10 @@ public class Emerald_DetectorItem extends Item {
 
     private void outputValuableCoordinates(BlockPos blockPos, PlayerEntity player, Block block) {
         player.sendMessage(Text.literal( "在 " +
-                "[" + "x: "+blockPos.getX() + ", "+"y: "+ blockPos.getY() + ", "+"z: " + blockPos.getZ() + "]"+" 找到: " + "(" + block.asItem().getName().getString() + ")"), false);
+                "[" + "x: "+blockPos.getX() + ", "+"y: "+ blockPos.getY() + ", "+"z: " + blockPos.getZ() + "]"+" 找到: " + "("+block.asItem().getName().getString()+")"), false);
     }
 
     private boolean isValuableBlock(BlockState state) {
-        return state.isOf(Blocks.EMERALD_ORE) || state.isOf(Blocks.DEEPSLATE_EMERALD_ORE);
+        return state.isOf(Blocks.ANCIENT_DEBRIS) || state.isOf(Blocks.NETHERITE_BLOCK);
     }
 }
