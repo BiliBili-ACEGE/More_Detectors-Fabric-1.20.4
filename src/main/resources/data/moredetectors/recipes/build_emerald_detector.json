@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:emerald"
+    },
+    "X": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "  X",
+    " X ",
+    "###"
+  ],
+  "result": {
+    "item": "moredetectors:emerald_detector"
+  },
+  "show_notification": true
+}

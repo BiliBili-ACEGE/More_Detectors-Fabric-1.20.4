@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "moredetectors",
+	"version": "${version}",
+	"name": "MoreDetectors",
+	"description": "This is a Mod made by ace :)",
+	"authors": [
+		"ace!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/moredetectors/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.ace.moredetectors.moredetectors"
+		],
+		"client": [
+			"net.ace.moredetectors.moredetectorsClient"
+		],
+		"fabric-datagen": [
+			"net.ace.moredetectors.moredetectors"
+		]
+	},
+	"mixins": [
+		"moredetectors.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

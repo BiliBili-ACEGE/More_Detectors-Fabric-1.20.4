@@ -1,0 +1,10 @@
+{
+  "item.moredetectors.iron_detector": "Iron Detector",
+  "item.moredetectors.diamond_detector": "Diamond Detector",
+  "item.moredetectors.emerald_detector": "Emerald Detector",
+  "item.moredetectors.copper_detector": "Copper Detector",
+  "item.moredetectors.gold_detector": "Gold Detector",
+  "item.moredetectors.netherite_detector": "Netherite Detector",
+  "item.moredetectors.dye_detector": "Dye Detector",
+  "itemgroup.moredetector": "More Detector"
+}

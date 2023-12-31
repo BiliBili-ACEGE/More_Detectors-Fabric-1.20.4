@@ -1,0 +1,10 @@
+{
+  "item.moredetectors.iron_detector": "铁探测器",
+  "item.moredetectors.diamond_detector": "钻石探测器",
+  "item.moredetectors.emerald_detector": "绿宝石探测器",
+  "item.moredetectors.copper_detector": "铜探测器",
+  "item.moredetectors.gold_detector": "金探测器",
+  "item.moredetectors.netherite_detector": "下界合金探测器",
+  "item.moredetectors.dye_detector": "青金石探测器",
+  "itemgroup.moredetector": "更多探测器"
+}
